@@ -80,8 +80,8 @@ These references are generated with the same settings for network layout and tra
 ## Usage in publications
 
 Up until now this dataset has been used in the following publications:
-- Fast and deep neuromorphic learning with time-to-first-spike coding; *J. Göltz∗, L. Kriener∗, A. Baumbach, S. Billaudelle, O. Breitwieser, B. Cramer, D. Dold, A. F. Kungl, W. Senn, J. Schemmel, K. Meier, M. A. Petrovici*; https://arxiv.org/abs/1912.11443
+- Fast and deep: energy-efficient neuromorphic learning with first-spike times; *J. Göltz∗, L. Kriener∗, A. Baumbach, S. Billaudelle, O. Breitwieser, B. Cramer, D. Dold, A. F. Kungl, W. Senn, J. Schemmel, K. Meier, M. A. Petrovici*; https://arxiv.org/abs/1912.11443
 
 If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated.
 
-The data used in the publication "Fast and deep neuromorphic learning with time-to-first-spike coding" is also uploaded as `.npy` files in `publication_data/`.
+The data used in the publication "Fast and deep: energy-efficient neuromorphic learning with first-spike times" is also uploaded as `.npy` files in `publication_data/`.
