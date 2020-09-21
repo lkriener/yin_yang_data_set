@@ -2,7 +2,7 @@
 
 This deep learning dataset was developed for research on biologically plausible error-backpropagation and deep learning in spiking neural networks.
 It serves as an alternative to e.g. the MNIST dataset providing the following advantages:
-- **Very clear gap between the accuracies reached by a linear classifier and a deep neural network**
+- **Very clear gap between the accuracies reached by a linear classifier/shallow network and a deep neural network**
 - Smaller and therefore faster to train
 - Symmetric input design allows successful training of neuron models without intrinsic bias
 
@@ -25,7 +25,7 @@ In order to produce a balanced dataset, the data is generated with rejection sam
 The equations for the calclulation of the Yin-Yang shape are inspired by: https://link.springer.com/content/pdf/10.1007/11564126_19.pdf (Appendix A).
 
 ## Usage
-This dataset is designed to make use of the PyTorch dataset and dataloader architecutre, but (with some minor changes) it can also used in any other deep learning framework.
+This dataset is designed to make use of the PyTorch dataset and dataloader architecture, but (with some minor changes) it can also be used in any other deep learning framework.
 
 #### PyTorch
 A detailed example is shown in `example.ipynb`.
@@ -70,17 +70,18 @@ The dataset can now be loaded as shown above. The data can be iterated over, sav
 
 ## Reference results
 
-These references are generated with the same settings for network layout and training (hidden layer of 120 neurons for the ANN, batchsize of 20, learning rate of 0.001, adam optimizer, 300 epochs for the ANN as well as the linear classifier) as in `example.ipynb`. The training was repeated 20 times with randomly chosen weight initializations. The accuracies are given as mean and standard devaition over the 20 runs.
+These references are generated with the same settings for network layout and training (hidden layer of 120 neurons for the ANN, batchsize of 20, learning rate of 0.001, adam optimizer, 300 epochs for the ANN as well as the shallow network) as in `example.ipynb`. The training was repeated 20 times with randomly chosen weight initializations. The accuracies are given as mean and standard devaition over the 20 runs.
 
 | Network           | Test accuracy [%] | Train accuracy [%] |
 | ------------------|:-----------------:|:------------------:|
 | ANN (4-120-3)     | 98.7 +- 0.3       | 98.5 +- 0.3        |
-| Linear classifier | 64.3 +- 0.2       | 64.8 +- 0.2        |
+| Shallow network   | 64.3 +- 0.2       | 64.8 +- 0.2        |
 
 ## Usage in publications
 
 Up until now this dataset has been used in the following publications:
 - Fast and deep: energy-efficient neuromorphic learning with first-spike times; *J. Göltz∗, L. Kriener∗, A. Baumbach, S. Billaudelle, O. Breitwieser, B. Cramer, D. Dold, A. F. Kungl, W. Senn, J. Schemmel, K. Meier, M. A. Petrovici*; https://arxiv.org/abs/1912.11443
+- EventProp: Backpropagation for Exact Gradients in Spiking Neural Networks; *T. Wunderlich and C. Pehle*; https://arxiv.org/abs/2009.08378
 
 If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated.
 
