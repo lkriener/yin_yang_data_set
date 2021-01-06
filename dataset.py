@@ -3,10 +3,11 @@ from torch.utils.data.dataset import Dataset
 
 
 class YinYangDataset(Dataset):
-    def __init__(self, r_small=0.1, r_big=0.5, size=1000, seed=42):
+    def __init__(self, r_small=0.1, r_big=0.5, size=1000, seed=42, transform=None):
         super(YinYangDataset, self).__init__()
         # using the numpy RNG to allow compatibility to other deep learning frameworks
         np.random.seed(seed)
+        self.transform = transform
         self.r_small = r_small
         self.r_big = r_big
         self.__vals = []
@@ -61,7 +62,10 @@ class YinYangDataset(Dataset):
         return np.sqrt((x - 0.5 * self.r_big)**2 + (y - self.r_big)**2)
 
     def __getitem__(self, index):
-        return self.__vals[index], self.__cs[index]
+
+        if self.transform:
+            sample = self.transform(self.__vals[index], self.__cs[index])
+        return sample
 
     def __len__(self):
         return len(self.__cs)
