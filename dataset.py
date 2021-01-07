@@ -9,7 +9,7 @@ class to_spike_train(object):
     def __call__(self, sample):
         no_neurons = sample[0].shape[0]
         spike_train = np.zeros((self.T, no_neurons))
-        spike_train[[int(x * self.T) for x in sample[0]], np.arange(0,no_neurons)] = 1.
+        spike_train[[int(np.round(x * self.T)) for x in sample[0]], np.arange(0,no_neurons)] = 1.
 
         out_s =  np.zeros((self.T, self.no_classes))
         out_s[:,sample[1]] = 1
