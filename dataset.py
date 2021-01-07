@@ -1,19 +1,5 @@
 import numpy as np
 from torch.utils.data.dataset import Dataset
-
-class to_spike_train(object):
-    def __init__(self, T):
-        self.T = T
-        self.no_classes = 3
-
-    def __call__(self, sample):
-        no_neurons = sample[0].shape[0]
-        spike_train = np.zeros((self.T, no_neurons))
-        spike_train[[int(np.round(x * self.T)) for x in sample[0]], np.arange(0,no_neurons)] = 1.
-
-        out_s =  np.zeros((self.T, self.no_classes))
-        out_s[:,sample[1]] = 1
-        return (spike_train, out_s)
         
 class YinYangDataset(Dataset):
     def __init__(self, r_small=0.1, r_big=0.5, size=1000, seed=42, transform=None):
@@ -82,3 +68,18 @@ class YinYangDataset(Dataset):
 
     def __len__(self):
         return len(self.__cs)
+
+# Example transform to generate T long discrete spike train
+class to_spike_train(object):
+    def __init__(self, T):
+        self.T = T
+        self.no_classes = 3
+
+    def __call__(self, sample):
+        no_neurons = sample[0].shape[0]
+        spike_train = np.zeros((self.T, no_neurons))
+        spike_train[[int(np.round(x * self.T)) for x in sample[0]], np.arange(0,no_neurons)] = 1.
+
+        out_s =  np.zeros((self.T, self.no_classes))
+        out_s[:,sample[1]] = 1
+        return (spike_train, out_s)
