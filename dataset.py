@@ -4,8 +4,8 @@ from torch.utils.data.dataset import Dataset
 class YinYangDataset(Dataset):
     def __init__(self, r_small=0.1, r_big=0.5, size=1000, seed=42, transform=None):
         super(YinYangDataset, self).__init__()
-        # using the numpy RNG to allow compatibility to other deep learning frameworks
-        np.random.seed(seed)
+        # using a numpy RNG to allow compatibility to other deep learning frameworks
+        self.rng = np.random.RandomState(seed)
         self.transform = transform
         self.r_small = r_small
         self.r_big = r_big
@@ -15,7 +15,7 @@ class YinYangDataset(Dataset):
         for i in range(size):
             # keep num of class instances balanced by using rejection sampling
             # choose class for this sample
-            goal_class = np.random.randint(3)
+            goal_class = self.rng.randint(3)
             x, y, c = self.get_sample(goal=goal_class)
             # add mirrod axis values
             x_flipped = 1. - x
@@ -29,7 +29,7 @@ class YinYangDataset(Dataset):
         found_sample_yet = False
         while not found_sample_yet:
             # sample x,y coordinates
-            x, y = np.random.rand(2) * 2. * self.r_big
+            x, y = self.rng.rand(2) * 2. * self.r_big
             # check if within yin-yang circle
             if np.sqrt((x - self.r_big)**2 + (y - self.r_big)**2) > self.r_big:
                 continue
