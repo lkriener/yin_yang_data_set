@@ -1,3 +1,5 @@
+![run tests](https://github.com/lkriener/yin_yang_dataset/workflows/run%20tests/badge.svg)
+
 # Yin-Yang Dataset
 
 This deep learning dataset was developed for research on biologically plausible error-backpropagation and deep learning in spiking neural networks.
