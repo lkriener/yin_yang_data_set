@@ -1,0 +1,25 @@
+name: run tests
+on: [push, pull_request]
+jobs:
+  pyright:
+    name: unittest execution
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.1
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: run tests
+        run: |
+          python3 -m unittest discover tests
+      - name: 'save pngs from tests for later'
+        uses: actions/upload-artifact@v2
+        with:
+          name: pngResultsFromTests
+          path: tests/*.png
