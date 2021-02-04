@@ -61,7 +61,7 @@ class YinYangDataset(Dataset):
         return np.sqrt((x - 0.5 * self.r_big)**2 + (y - self.r_big)**2)
 
     def __getitem__(self, index):
-        sample = (self.__vals[index], self.__cs[index])
+        sample = (self.__vals[index].copy(), self.__cs[index])
         if self.transform:
             sample = self.transform(sample)
         return sample
