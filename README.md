@@ -60,11 +60,11 @@ test_loader = DataLoader(dataset_test, batch_size=batchsize_eval, shuffle=False)
 
 #### Other deep learning frameworks
 Even though this dataset is designed for PyTorch, the following easy code changes make it useable in any deep learning framework:
-- delete line 2
+- In `dataset.py` delete line 2
 ```python
 from torch.utils.data.dataset import Dataset
 ```
-- replace in line 5
+- and replace in line 5
 ```python
 class YinYangDataset(Dataset):
 ```
