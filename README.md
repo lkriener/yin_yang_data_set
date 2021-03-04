@@ -1,4 +1,4 @@
-![run tests](https://github.com/lkriener/yin_yang_dataset/workflows/run%20tests/badge.svg)
+![run tests](https://github.com/lkriener/yin_yang_data_set/actions/workflows/tests.yaml/badge.svg)
 
 # Yin-Yang Dataset
 
