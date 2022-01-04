@@ -4,7 +4,7 @@
 
 This deep learning dataset was developed for research on biologically plausible error-backpropagation and deep learning in spiking neural networks.
 It serves as an alternative to e.g. the MNIST dataset providing the following advantages:
-- **Very clear gap between the accuracies reached by a linear classifier/shallow network and a deep neural network**
+- **Very clear gap between the accuracies reached by a linear classifier/shallow network, a deep neural network and a deep network with frozen lower weights**
 - Smaller and therefore faster to train
 - Symmetric input design allows successful training of neuron models without intrinsic bias
 
@@ -76,18 +76,20 @@ The dataset can now be loaded as shown above. The data can be iterated over, sav
 
 ## Reference results
 
-These references are generated with the same settings for network layout and training (hidden layer of 120 neurons for the ANN, batchsize of 20, learning rate of 0.001, adam optimizer, 300 epochs for the ANN as well as the shallow network) as in `example.ipynb`. The training was repeated 20 times with randomly chosen weight initializations. The accuracies are given as mean and standard devaition over the 20 runs.
+These references are generated with the same settings for network layout and training (hidden layer of 30 neurons for the ANN, batchsize of 20, learning rate of 0.01, adam optimizer, 300 epochs for the ANN as well as the shallow network) as in `example.ipynb`. The training was repeated 20 times with randomly chosen weight initializations. The accuracies are given as mean and standard devaition over the 20 runs.
+For more details see https://arxiv.org/abs/2102.08211.
 
-| Network           | Test accuracy [%] | Train accuracy [%] |
-| ------------------|:-----------------:|:------------------:|
-| ANN (4-120-3)     | 98.7 +- 0.3       | 98.5 +- 0.3        |
-| Shallow network   | 64.3 +- 0.2       | 64.8 +- 0.2        |
+| Network                           | Test accuracy [%]
+| ----------------------------------|:-----------------:
+| ANN (4-30-3)                      | 97.6 +- 1.5
+| ANN (4-30-3) frozen lower weights | 85.5 +- 5.8
+| Shallow network                   | 63.8 +- 1.0
 
 ## Usage in publications
 
 Up until now this dataset has been used in the following publications:
-- Fast and deep: energy-efficient neuromorphic learning with first-spike times; *J. Göltz∗, L. Kriener∗, A. Baumbach, S. Billaudelle, O. Breitwieser, B. Cramer, D. Dold, A. F. Kungl, W. Senn, J. Schemmel, K. Meier, M. A. Petrovici*; https://arxiv.org/abs/1912.11443
-- EventProp: Backpropagation for Exact Gradients in Spiking Neural Networks; *T. Wunderlich and C. Pehle*; https://arxiv.org/abs/2009.08378
+- Fast and deep: energy-efficient neuromorphic learning with first-spike times; *J. Göltz∗, L. Kriener∗, A. Baumbach, S. Billaudelle, O. Breitwieser, B. Cramer, D. Dold, A. F. Kungl, W. Senn, J. Schemmel, K. Meier, M. A. Petrovici*; https://www.nature.com/articles/s42256-021-00388-x (https://arxiv.org/abs/1912.11443)
+- EventProp: Backpropagation for Exact Gradients in Spiking Neural Networks; *T. Wunderlich and C. Pehle*; https://www.nature.com/articles/s41598-021-91786-z (https://arxiv.org/abs/2009.08378)
 
 If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated.
 
