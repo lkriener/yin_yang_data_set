@@ -10,7 +10,7 @@ It serves as an alternative to e.g. the MNIST dataset providing the following ad
 
 For more information see:
 
-The Yin-Yang dataset; *L. Kriener, J. Göltz, M. A. Petrovici*; https://arxiv.org/abs/2102.08211
+The Yin-Yang dataset; *L. Kriener, J. Göltz, M. A. Petrovici*; https://doi.org/10.1145/3517343.3517380 (https://arxiv.org/abs/2102.08211)
 
 ## Structure
 
@@ -77,7 +77,7 @@ The dataset can now be loaded as shown above. The data can be iterated over, sav
 ## Reference results
 
 These references are generated with the same settings for network layout and training (hidden layer of 30 neurons for the ANN, batchsize of 20, learning rate of 0.01, adam optimizer, 300 epochs for the ANN as well as the shallow network) as in `example.ipynb`. The training was repeated 20 times with randomly chosen weight initializations. The accuracies are given as mean and standard devaition over the 20 runs.
-For more details see https://arxiv.org/abs/2102.08211.
+For more details see https://doi.org/10.1145/3517343.3517380 (https://arxiv.org/abs/2102.08211).
 
 | Network                           | Test accuracy [%]
 | ----------------------------------|:-----------------:
