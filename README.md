@@ -90,6 +90,9 @@ For more details see https://doi.org/10.1145/3517343.3517380 (https://arxiv.org/
 Up until now this dataset has been used in the following publications:
 - Fast and deep: energy-efficient neuromorphic learning with first-spike times; *J. Göltz∗, L. Kriener∗, A. Baumbach, S. Billaudelle, O. Breitwieser, B. Cramer, D. Dold, A. F. Kungl, W. Senn, J. Schemmel, K. Meier, M. A. Petrovici*; https://www.nature.com/articles/s42256-021-00388-x (https://arxiv.org/abs/1912.11443)
 - EventProp: Backpropagation for Exact Gradients in Spiking Neural Networks; *T. Wunderlich and C. Pehle*; https://www.nature.com/articles/s41598-021-91786-z (https://arxiv.org/abs/2009.08378)
+- A scalable approach to modeling on accelerated neuromorphic hardware; *E. Müller, E. Arnold, O. Breitwieser, M. Czierlinski, A. Emmel, J. Kaiser,
+C. Mauch, S. Schmitt, P. Spilger, R. Stock, Y. Stradmann, J. Weis, A. Baumbach, S. Billaudelle, B. Cramer, F. Ebert, J. Göltz, J. Ilmberger, V. Karasenko,  M. Kleider, A. Leibfried, C. Pehle, J. Schemmel*; https://www.frontiersin.org/articles/10.3389/fnins.2022.884128/full
+- Exact gradient computation for spiking neural networks through forward propagation; *J. H. Lee, S. Haghighatshoar, A. Karbasi*; https://arxiv.org/abs/2210.15415
 
 If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated.
 
