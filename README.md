@@ -92,8 +92,12 @@ Up until now this dataset has been used in the following publications:
 - EventProp: Backpropagation for Exact Gradients in Spiking Neural Networks; *T. Wunderlich and C. Pehle*; https://www.nature.com/articles/s41598-021-91786-z (https://arxiv.org/abs/2009.08378)
 - A scalable approach to modeling on accelerated neuromorphic hardware; *E. Müller, E. Arnold, O. Breitwieser, M. Czierlinski, A. Emmel, J. Kaiser,
 C. Mauch, S. Schmitt, P. Spilger, R. Stock, Y. Stradmann, J. Weis, A. Baumbach, S. Billaudelle, B. Cramer, F. Ebert, J. Göltz, J. Ilmberger, V. Karasenko,  M. Kleider, A. Leibfried, C. Pehle, J. Schemmel*; https://www.frontiersin.org/articles/10.3389/fnins.2022.884128/full
-- Exact gradient computation for spiking neural networks through forward propagation; *J. H. Lee, S. Haghighatshoar, A. Karbasi*; https://arxiv.org/abs/2210.15415
+- Exact gradient computation for spiking neural networks through forward propagation; *J. H. Lee, S. Haghighatshoar, A. Karbasi*; https://proceedings.mlr.press/v206/lee23b.html (https://arxiv.org/abs/2210.15415)
+- Learning efficient backprojections across cortical hierarchies in real time; *K. Max, L. Kriener, G. P. García, T. Nowotny, W. Senn, M. A. Petrovici*; https://arxiv.org/abs/2212.10249
+- hxtorch.snn: Machine-learning-inspired Spiking Neural Network Modeling on BrainScaleS-2; *P. Spilger, E. Arnold, L. Blessing, C. Mauch, C. Pehle, E. Müller, J. Schemmel*; https://dl.acm.org/doi/abs/10.1145/3584954.3584993
+- Safe semi-supervised learning for pattern classification; *J. Ma, G. Yu, W. Xiong, X. Zhu*; https://doi.org/10.1016/j.engappai.2023.106021
+- Event-based Backpropagation for Analog Neuromorphic Hardware; *C. Pehle, L. Blessing, E. Arnold, E. Müller, J. Schemmel*; https://arxiv.org/abs/2302.07141
 
-If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated.
+If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated (or update it yourself via a pull request).
 
 The data used in the publication "Fast and deep: energy-efficient neuromorphic learning with first-spike times" is also uploaded as `.npy` files in `publication_data/`.
