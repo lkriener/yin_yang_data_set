@@ -97,7 +97,7 @@ C. Mauch, S. Schmitt, P. Spilger, R. Stock, Y. Stradmann, J. Weis, A. Baumbach, 
 - hxtorch.snn: Machine-learning-inspired Spiking Neural Network Modeling on BrainScaleS-2; *P. Spilger, E. Arnold, L. Blessing, C. Mauch, C. Pehle, E. Müller, J. Schemmel*; https://dl.acm.org/doi/abs/10.1145/3584954.3584993
 - Safe semi-supervised learning for pattern classification; *J. Ma, G. Yu, W. Xiong, X. Zhu*; https://doi.org/10.1016/j.engappai.2023.106021
 - Event-based Backpropagation for Analog Neuromorphic Hardware; *C. Pehle, L. Blessing, E. Arnold, E. Müller, J. Schemmel*; https://arxiv.org/abs/2302.07141
-- Layer Ensemble Averaging for Fault Tolerance in Memristive Neural Networks; *O. Yousuf, B. Hoskins, K. Ramu, M. Fream, W. A. Borders, A. Madhavan, M. W. Daniels, A. Dienstfrey, J. J. McClelland, M. Lueker-Boden, G. C. Adam*; https://arxiv.org/abs/2404.15621
+- Layer Ensemble Averaging for Improving Memristor-Based Artificial Neural Network Performance; *O. Yousuf, B. Hoskins, K. Ramu, M. Fream, W. A. Borders, A. Madhavan, M. W. Daniels, A. Dienstfrey, J. J. McClelland, M. Lueker-Boden, G. C. Adam*; https://arxiv.org/abs/2404.15621
 
 If you would like to use this dataset in a publication feel free to do so and please contact me so that this list can be updated (or update it yourself via a pull request).
 
